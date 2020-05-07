@@ -9,7 +9,11 @@ const Block = (props) => {
   // Sort products by name if any products exist
   products && products.sort((a, b) => a.name.localeCompare(b.name))
   // Destructure remaining props into separate variables
-  const { page_not_found_heading, text, product_list_heading } = props
+  const {
+    page_not_found_heading,
+    page_not_found_text,
+    product_list_heading,
+  } = props
   return (
     <React.Fragment>
       <h1 className={css(classes.example)}>{page_not_found_heading}</h1>
